@@ -1,0 +1,21 @@
+{
+    // 1. Указываем conda-интерпретатор
+    "python.defaultInterpreterPath": "C:/Users/Stanislav/anaconda3/envs/dbt_env/python.exe",
+    "python.terminal.activateEnvironment": true,
+    // 2. Использовать Black из окружения
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    // 3. Форматирование при сохранении
+    "editor.formatOnSave": true,
+    // 4. Автоисправления ruff
+    "editor.codeActionsOnSave": {
+        "source.fixAll.ruff": "explicit"
+    },
+    // 5. Использовать ruff из conda-окружения
+    "ruff.path": [
+        "ruff"
+    ],
+    // 6. Линтинг ruff
+    "ruff.enable": true
+}

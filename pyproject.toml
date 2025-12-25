@@ -1,0 +1,23 @@
+[tool.black]
+line-length = 88
+target-version = ["py39"]
+
+[tool.ruff]
+line-length = 88
+select = ["E", "F", "I", "B"]  # базовые ошибки + импорты + баги
+exclude = [
+    "env",
+    "envs",
+    ".env",
+    ".envs",
+    ".venv",
+    "venv",
+    ".conda",
+    "__pycache__"
+]
+
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "auto"
